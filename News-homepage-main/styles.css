@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main{
+    width: 63%;
+    min-width: 900px;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+.navbar{
+ padding-top: 1rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-items ul{
+    list-style-type: none;
+}
+.navbar-items li{
+    display: inline; 
+}
+.navbar-items li a{
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+}
+.navbar-items li a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.sideMenuButton img{
+    font-size: 200px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+.sidenavigationbar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: hsl(36, 100%, 99%);
+    overflow-x: hidden;
+    transition:  0.5s ease-in;
+    padding-top:60px;
+}
+.sidenavigationbar a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+    transition: 0.3s;
+    text-decoration: none;
+}
+.sidenavigationbar a button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+.sidenavigationbar .closebutton{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 100px;
+    margin-left: 50px;
+    font-weight: 200;
+}
+.image{
+    margin-top: 2rem;
+    display: flex;
+}
+.background{
+    background: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:620px;
+    height:300px;
+}
+.future{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.future .bright{
+    font-weight: 800;
+    width: 300px;
+    font-size: 40px;
+    line-height: 2.5rem;
+}
+.passage{
+    width: 320px;
+    
+}
+.passage p{
+    line-height: 1.3rem;
+    color: hsl(236, 13%, 42%);
+}
+.new{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 1.5rem ;
+    font-size: 15px;
+    width: 60%;
+    margin-left: 1.5rem;
+}
+h2{
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    font-size: 35px;
+}
+.hydrogen h3{
+    padding-bottom: .5rem;
+}
+.hydrogen h3:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+.hydrogen p{
+    color: hsl(233, 8%, 79%);
+    font-weight: 400;
+    padding-bottom: .7rem;
+    line-height: 1.5rem;
+}
+.border{
+    width: 100%;
+    height: 1.5px;
+    background-color: hsl(236, 13%, 42%);
+    margin-bottom: 1.5rem;
+}
+.downside h3{
+    padding-bottom: .5rem;
+}
+.downside h3:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+.downside p{
+    color: hsl(233, 8%, 79%);
+    font-weight: 400;
+    padding-bottom: .9rem;
+    line-height: 1.5rem;
+}
+.funding h3{
+    padding-bottom: .3rem;
+
+}
+.funding h3:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}
+.funding p{
+    color: hsl(233, 8%, 79%);
+    font-weight: 400;
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+}
+button{
+    margin-top: 2.8rem;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    padding: 1rem;
+    border: 0;
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+}
+.retro{
+    display: flex;
+    width: 100%;
+    margin-left: -.5rem;
+}
+.retro img{
+    width: 100px;
+    height: 100px;
+}
+.words{
+    margin-left: 0.8rem;
+}
+.number{
+    color: hsl(233, 8%, 79%);
+    font-weight: 800;
+    font-size: 22px;
+    margin: 0 0 .1rem 0;
+}
+.title{
+    color: hsl(240, 100%, 5%);
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+.title:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.text{
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+.laptop{
+    display: flex;
+    margin-left: .45rem;
+    margin-right:-1rem;
+}
+.laptop .title{
+    font-size: 14px;
+}
+.laptop img{
+    width: 100px;
+    height: 100px;
+}
+.gaming{
+    display: flex;
+    margin-left: 4rem;
+}
+.gaming img{
+    width: 100px;
+    height: 100px;
+}
+
+/* On screens that are 600px wide or less*/
+@media screen and (max-width: 800px) {
+    main{
+    width:30% ;
+    min-width: 310px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    }
+    .navbar-items {
+        display: none; 
+    }
+    .sideMenuButton img{
+        display: flex;
+    }
+    .sidenavigationbar{
+        display: block !important;
+    }
+
+    .background{
+        background: url(./assets/images/image-web-3-mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:325px;
+        height:300px;
+        margin-bottom: -2rem;
+    }
+    .future{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .future .bright{
+        font-size: 35px;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .passage{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    button{
+        margin-bottom: 2rem;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .new{
+        width: 325px;
+        margin-left: 0rem;
+    }
+    .bottom{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    .retro{
+        margin-left: 0rem;
+    }
+    .laptop{
+        margin-left: 0;
+    }
+    .gaming{
+        margin-left: 0rem;
+
+    }
+    .sidenavigationbar{
+        height: 100%;
+        text-align: start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: hsl(36, 100%, 99%);
+        overflow-x: hidden;
+        transition:  0.3s ease-in;
+        padding-top:100px;
+    
+    }
+    .sidenavigationbar a:hover{
+        color: hsl(5, 85%, 63%);
+  }
+}
