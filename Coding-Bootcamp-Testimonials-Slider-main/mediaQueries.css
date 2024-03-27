@@ -1,0 +1,40 @@
+@media screen and (min-width: 800px){
+ .image img{
+    width: 400px;
+    height: 400px;
+    top: 0rem;
+    left: 30rem;
+    position: absolute;
+ }
+ .slideshow-container::before{
+    left: -23rem;
+    top: 38rem;
+}
+.background img{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 2rem;
+    left: 25rem;
+}
+button{
+    top: 27rem;
+    left: 69%;
+    transform: translateX(-40%);
+}
+.text{
+    position: absolute;
+    top: 7rem;
+    left: -5rem;
+    font-size: 27px;
+    width: 80%;
+    text-align: start;
+}
+.text::before{
+    top: -2rem;
+    left: 6rem;
+}
+.role{
+    top: 10rem;
+}
+}
