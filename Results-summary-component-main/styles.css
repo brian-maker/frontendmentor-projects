@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.card{
+    margin-top: 8rem;
+    background-color: white;
+    font-weight: 100 900;
+
+}
+.results-summary{
+    margin: 0 auto;
+    max-width: 38vw;
+    min-width: 38vw;
+    width: 38vw;
+    display: flex;
+    box-shadow: 1px 15px 15px hsla(166, 7%, 63%,0.5);
+    border-radius: 1rem;
+
+
+}
+.results{
+    width: 50%;
+    background-image: linear-gradient(hsl(252, 90%, 57%), hsl(241, 81%, 54%));
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+    font-weight:900 ;
+    margin-top: 2rem;
+}
+.circle{
+    margin-top: 2rem;   
+    background-image: linear-gradient(rgb(45, 3, 161), hsla(241, 72%, 46%, 0));
+    border-radius:50%;
+   
+}
+.circle p{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    color: hsl(241, 100%, 89%);
+}
+.circle span{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.great{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.great p{
+    color:hsl(241, 100%, 89%) ;
+    text-align: center;
+    padding: 0 1.6rem 1.8rem 1.7rem;
+}
+.summary{
+    width: 50%;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 0 1rem 1rem 0;
+    padding: 2rem;
+}
+h2{
+    font-size: 18px;
+    color:  hsl(224, 30%, 27%);
+    margin-bottom: 1.5rem;
+}
+#report{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.part-1{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+/*reaction*/
+.report-1{
+    margin: 1rem  1rem 1rem 0;
+    background-color: hsla(0, 100%, 67%,0.1);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.report-1 h5{
+   color: hsl(0, 66%, 68%); 
+}
+.report-1 span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+.report-1 p{
+    color: hsl(241, 51%, 75%);
+}
+/*memory*/
+.report-2{
+    margin: 0 1rem 1rem 0;
+    background-color: hsla(39, 100%, 56%,0.1);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.report-2 h5{
+   color: hsl(39, 100%, 56%); 
+}
+.report-2 span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+.report-2 p{
+    color: hsl(241, 51%, 75%);
+}
+/*verbal*/
+.report-3{
+    margin: 0 1rem 1rem 0;
+    background-color: hsla(166, 100%, 37%,0.1);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.report-3 h5{
+   color: hsl(166, 100%, 37%); 
+}
+.report-3 span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+.report-3 p{
+    color: hsl(241, 51%, 75%);
+}
+/*visual*/
+.report-4{
+    margin: 1rem 1rem 1rem 0;
+    background-color: hsla(234, 85%, 45%,0.1);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.report-4 h5{
+   color: hsl(234, 85%, 45%); 
+}
+.report-4 span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+.report-4 p{
+    color: hsl(241, 51%, 75%);
+}
+
+ .button {
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 94%; 
+    border-radius: 2rem;
+    margin-top: 1.2rem;
+}
+.button:hover {
+    background-image:linear-gradient(hsl(252, 80%, 56%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
+  /*small screen devices*/
+  @media screen and (max-width: 900px) {
+    .card{
+        min-width: 620px;
+        margin: 0 auto;
+    }
+    .results-summary {
+        display: grid;
+        width: 70vw;
+        max-width: 37%;
+        min-width: 50%;
+    }
+    .results{
+      width: 100%; 
+      min-width: 70%; 
+    }
+    .summary{
+        width: 100%;
+        min-width: 70%; 
+
+    }
+  }
+
+
