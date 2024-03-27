@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.input-control{
+
+}
+.error{
+    color:hsl(0, 100%, 74%) ;
+    padding-right: 2rem;
+    text-transform: lowercase;
+    font-size: 12px;
+}
+.hidden{
+    display: none;
+}
+button{
+    border: 0;
+}
+body{
+     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+    }
+.container{
+    width: 25%;
+    margin: 0 auto;
+    min-width: 300px;
+    font-size: 16px;
+    margin-top: 2rem;
+
+}
+.logo{
+    margin: 1rem;
+}
+.background{
+    background: url(./images/hero-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 301px;
+    height: 200px;
+}
+.content{
+    text-align: center;
+    text-transform: uppercase;
+}
+h1{
+    margin: 3rem 3rem 0rem 3rem;
+    letter-spacing: .5rem;
+}
+h1 span{
+    color: hsl(0, 36%, 70%) ;
+}
+p{
+    text-transform:capitalize;
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem 1rem 1rem 1rem;
+    color:hsl(0, 36%, 70%) ;
+}
+.email{
+        position: relative;
+}
+input{
+    border: 0;
+    width:90%;
+    margin: 1rem;
+    padding: .9rem;
+    border-radius: 5rem;
+    outline: 0.1px solid hsl(0, 36%, 70%);
+}
+.icon-arrow{
+    background-color: hsl(0, 93%, 68%);
+    border-radius: 5rem;
+    padding: .7rem 1.6rem;
+    position: absolute;
+    top: 0.95rem;
+    right: .8rem;
+}
+.icon-arrow:hover{
+    cursor: pointer;
+    background-color: hsla(0, 93%, 68%,0.5);
+}
+#errorimage{
+    position: absolute;
+    top: 1.5rem;
+    left: 12rem;
+}
+/*screens wider than 600px*/
+@media screen and (min-width: 800px) {
+    body{
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%),135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+    }
+    .container {
+        width: 70%;
+        min-width: 1150px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    .top{
+        width: 44%;
+    }
+    .content{
+        width: 56%;
+    }
+    .logo {
+        position: absolute;
+        right: 53rem;
+        padding-top: 2rem;
+    }
+    .background{
+        background: url(./images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width:30vw;
+        width: 100%;
+        min-height: 85vh;
+        height: 100%;
+    }
+    h1{
+        margin: 10rem 7rem 5rem 8rem;
+        text-align: start;
+        letter-spacing: .5rem;
+        font-size: 50px;
+
+    }
+    .content{
+        background: url(./images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    p{
+        text-align: start;
+        font-size: 16px;
+        padding: 0rem 9rem 1rem 8rem;
+    }
+    input{
+        width:55%;
+        margin: 1rem 1rem 1rem 8rem;
+        display: block;
+
+    } 
+    .icon-arrow{
+        position: absolute;
+        top: -0.05rem;
+        right: 10rem;
+    }
+    .error{
+        color:hsl(0, 100%, 74%) ;
+        padding-right: 7rem;
+        text-transform: lowercase;
+        font-size: 15px;
+    }
+    #errorimage{
+        position: absolute;
+        top: 0.7rem;
+        left: 24rem;
+    }
+  }
