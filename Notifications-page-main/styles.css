@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+body{
+    background-color: hsl(210, 60%, 98%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.page{
+    background-color: #fff;
+    width: 27%;
+    min-width: 400px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+   
+}
+.notification-section{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+
+}
+.notifications{
+    display: flex;
+}
+.notifications p:nth-of-type(1){
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    padding:1.5rem 0.7rem 1.5rem 1rem;
+
+}
+.three{
+    border: 1px solid hsl(219, 85%, 26%) ;
+    padding: 0.2rem 0.7rem;
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    border-radius:5px;
+    margin-top: 1.1rem;
+    margin-bottom: 1.9rem;
+}
+.mark-all{
+    font-size: 16px;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+#webber{
+    background-color:hsl(210, 60%, 98%);
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0.6rem 0.8rem 1rem;
+}
+#angela{
+    background-color:hsl(210, 60%, 98%);
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0.6rem 0.8rem 1rem;
+}
+#jacob{
+    background-color:hsl(210, 60%, 98%);
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0.6rem 0.8rem 1rem;
+}
+
+.mark{
+    display: flex;
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+}
+img{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.7rem;
+    margin-top: 0.1rem;
+}
+.person-name{
+    font-weight: 800;
+    color:hsl(224, 21%, 14%)
+}
+.event{
+    color:hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+.time-elapsed{
+    padding-top: 0.1rem;
+    color: hsl(219, 12%, 42%);
+}
+.event-1{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+#rizky{
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 0.6rem 1rem 1rem;
+    margin-bottom:0.5rem ;
+}
+
+#angela-comments{
+    margin: 0.8rem  0 0 3rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 1.8rem 1rem 1.5rem;
+    color: hsl(219, 14%, 63%);
+    background-color: #fff;
+}
+#rizky-comments{
+    margin: 0.8rem  0 0 3rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 1.8rem 1rem 1.5rem;
+    color: hsl(219, 14%, 63%);
+}
+
+#kimberly{
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 0.6rem 1rem 1rem;
+    margin-bottom: 0.5rem;
+}
+.chess{
+    margin-right: -1rem;
+}
+#nathan{
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 0.6rem 1rem 1rem;
+    margin-bottom: 0.5rem;
+}
+#anna{
+    margin: 0 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 1rem 0.6rem 1rem 1rem;
+    margin-bottom: 3rem;
+}
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom:0.1rem;
+    margin-left: 0.3rem;
+  }
+
+  @media screen and (min-width: 700px) {
+    .page{
+        background-color: #fff;
+        min-width: 700px;
+        width:39%;
+        max-width: 700px;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+    .event:hover{
+        color:hsl(219, 85%, 26%);
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .person-name:hover{
+        color:hsl(219, 85%, 26%);
+        cursor: pointer;
+
+    }
+    .event-1{
+        color:hsl(219, 85%, 26%);
+        font-weight: 800;
+        cursor: pointer;
+    }
+   
+    .comments:hover{
+        cursor: pointer;
+        background-color:hsl(205, 33%, 90%) ;
+
+    }
+    .mark-all:hover{
+        cursor: pointer;
+        color:hsl(219, 85%, 26%);
+    }
+    .chess{
+        margin-left: 13.5rem;
+    }
+    .chess:hover{
+        cursor: pointer;
+    }
+    
+  }
