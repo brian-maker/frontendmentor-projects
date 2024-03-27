@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background: url(./images/bg-intro-mobile.png);
+   background-color: hsl(0, 100%, 74%);
+}
+.hidden{
+    display: none;
+}
+
+.icon-error1{
+    position: absolute;
+    right: 2rem;
+    top: 1.8rem;
+}
+.icon-error2{
+    position: absolute;
+    right: 2rem;
+    top: 7.5rem;
+}
+.icon-error3{
+    position: absolute;
+    right: 2rem;
+    top:13.5rem;
+}
+.icon-error4{
+    position: absolute;
+    right: 2rem;
+    top: 19rem;
+}
+.error{
+    color:hsl(0, 100%, 74%) ;
+    padding-right: 5rem;
+    padding-top: .5rem;
+}
+.container{
+   width: 25%; 
+   min-width: 354px;
+   margin: 0 auto;
+   background-size: cover;
+   background-repeat: no-repeat;
+   text-align: center;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 2rem 3rem 0 3rem;
+    color: white;
+}
+.left-section p{
+    font-size: 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
+    color: hsl(0, 58%, 96%);
+    line-height: 1.5rem;
+}
+.try{
+    background-color: hsl(248, 32%, 49%);
+    margin: 0.2rem 1rem 1rem 1rem;
+    padding: 1.5rem 4rem 1rem 4rem;
+    border-radius: 7px;
+    color: white;
+    box-shadow:0px 6px 0px 0px hsla(240, 5%, 39%, 0.4);
+    line-height: 1.5rem;
+}
+.try span{
+    font-weight: 700;
+}
+.form{
+    margin: 0.2rem 1rem 2rem 1rem;
+    background: white;
+    border-radius: 7px; 
+    box-shadow:0px 6px 0px 0px hsla(240, 5%, 39%, 0.4);
+    position: relative;
+}
+input{
+    width: 90%;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    border-radius: 7px;
+    border:1px solid hsl(246, 25%, 77%) ;
+    font-weight: 700;
+}
+input:focus{
+    outline:1px solid hsl(246, 25%, 77%) ;
+}
+button{
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    width: 90%;
+    border-radius: 7px;
+    color: white;
+    background: hsl(154, 59%, 51%);
+    border: 0 ;
+    border-bottom: 4px double hsl(154, 59%, 51%) ;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form p{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+form span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+@media screen and (min-width: 800px){
+body{
+    background: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+
+}
+.container{
+    width: 100%;
+    min-width: 950px;
+    display: flex;
+    margin-top: 7rem;
+}
+.left-section{
+margin-top: 7rem;
+text-align: start;
+width: 50%;
+}
+.right-section{
+    margin-right: 5rem;
+    width: 50%;
+}
+h1{
+    font-size: 35px;
+    padding: 2rem 14rem 1rem 10rem;
+}
+.left-section p{
+    padding: 1rem 10rem 1.5rem 10rem;
+}
+input{
+    margin: 1rem 0rem 1rem 0rem;
+    font-weight: 700;
+}
+.form{
+    margin: 2rem 1rem 2rem 1rem;
+    box-shadow:0px 8px 0px 0px hsla(240, 5%, 39%, 0.4);
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsla(154, 59%, 51%,0.7);
+}
+.error{
+    color:hsl(0, 100%, 74%) ;
+    direction: rtl;
+    float: right;
+    padding-right: 3rem;
+}
+
+.icon-error1{
+    position: absolute;
+    right: 4rem;
+    top: 1.8rem;
+}
+.icon-error2{
+    position: absolute;
+    right: 4rem;
+    top: 8.5rem;
+}
+.icon-error3{
+    position: absolute;
+    right: 4rem;
+    top:15.3rem;
+}
+.icon-error4{
+    position: absolute;
+    right: 4rem;
+    top: 22rem;
+}
+}

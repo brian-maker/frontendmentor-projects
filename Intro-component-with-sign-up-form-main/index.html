@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<div class="container">
+  <div class="left-section">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </div>
+
+  <div class="right-section">
+    <div class="try">
+      <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+    </div>  
+      <div class="form" id="form">
+        <form action="" id="myform" name="myform">
+
+          <input type="text" id="First Name" placeholder="First Name" name="First Name" required>
+          <img  id="icon-error1" class="icon-error1 hidden" src="./images/icon-error.svg" alt="icon-error">
+          <div id="error1" class="error"></div>
+
+          <input type="text" id="Last Name" placeholder="Last Name" name="Last Name" required>
+          <img  id="icon-error2" class="icon-error2 hidden" src="./images/icon-error.svg" alt="icon-error">
+          <div id="error2" class="error"></div>
+
+
+          <input type="email" id="Email Address" placeholder="Email Address" name="email" required>
+          <img  id="icon-error3" class="icon-error3 hidden" src="./images/icon-error.svg" alt="icon-error">
+          <div id="error3" class="error"></div>
+
+
+          <input type="password" id="Password" placeholder="Password" name="Password" required>
+          <img  id="icon-error4" class="icon-error4 hidden" src="./images/icon-error.svg" alt="icon-error">
+          <div id="error4" class="error"></div>
+
+
+          <button id="btn" onclick="checkFirstName() ,checkLastName(),checkEmail(),checkPassword(),errorF(),errorL(),errorE(),errorP() ">Claim your free trial</button>
+          <p>  By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+    
+  </div>
+</div>
+ <script src="file.js"></script>
+</body>
+</html>
