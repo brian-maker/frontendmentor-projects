@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color:  hsl(229, 57%, 11%);
+
+}
+.main{
+    background: url(./images/bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(243, 100%, 93%);
+    margin-top: 8rem;
+    border-radius: 10px;
+}
+.fylo{
+    width: 90%;
+   background-color: hsl(228, 56%, 26%);
+   border-radius: 10px 5rem 10px 10px;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   margin-top: 7rem;
+}
+.logo{
+    margin: 1rem 0 2rem 1rem;
+}
+.folders{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.document{
+    background-color: hsl(229, 57%, 11%);
+    padding: .5rem .7rem;
+    border-radius: 10px;
+}
+.files{
+    background-color: hsl(229, 57%, 11%);
+    padding: .65rem;
+    border-radius: 10px; 
+}
+.upload{
+    background-color: hsl(229, 57%, 11%);
+    padding: .8rem .65rem;
+    border-radius: 10px; 
+}
+.data{
+    width: 90%;
+    background-color: hsl(228, 56%, 26%);
+    padding: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    position: relative;
+}
+.data span{
+    font-weight: 700;
+    color: white;
+}
+.data p {
+    text-align: center;
+    padding: 1rem 0 ;
+    font-weight: 400;
+    color: hsl(229, 7%, 55%);
+}
+.loader{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    height: 19px;
+    border: 1px solid hsl(230, 31%, 20%);
+    padding-left:.2rem;
+}
+.loader .stop{
+    margin-top: .15rem;
+    background-image:linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%)) ;
+    height: 13px;
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+}
+.circle{
+    width: 10px;
+    background-color: white;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 94%;
+    top: 10%;
+}
+.range p:last-of-type{
+    display: flex;
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.pop{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 80%;
+    left: 20%;
+    color:hsl(229, 57%, 11%) ;
+    font-weight: 700;
+    display: flex;
+}
+.pop p{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    color:  hsl(229, 57%, 11%);
+}
+.pop p:last-of-type{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(229, 7%, 55%);
+    margin-top: 1rem;
+    padding-left: .5rem;
+}
+/*--1000px screens*/
+@media screen and (min-width: 1000px) {
+    body{
+        background-color:  hsl(229, 57%, 11%);
+        width: 100%;
+        max-height: 100vh;
+        position: relative;
+
+    }
+    .main{
+        background: url(./images/bg-desktop.png);
+        background-size:cover;
+        background-repeat:no-repeat;
+        margin-top: 25rem;
+        min-width: 1000px;
+        width: 100%;
+        height: 53.5vh;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .fylo{
+        width:25%;
+        min-width: 250px;
+        position: absolute;
+        left: 20%;
+        top: -51%;
+        padding: 1.5rem;
+    }
+    .logo{
+        margin: 1rem 0 2rem 1rem;
+    }
+    .folders{
+        display: flex;
+        align-items: start;
+        gap: .8rem;
+        margin-left: .5rem;
+        margin-bottom: 0rem;
+    }
+    .document{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .files{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1.1rem .8rem;
+        border-radius: 10px; 
+    }
+    .upload{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1.3rem .8rem;
+        border-radius: 10px; 
+    }
+    .data{
+        width: 40%;
+        min-width: 300px;
+       position: absolute;
+       left: 47.5%;
+       top: -10%;
+    }
+    .data p{
+        text-align: start;
+        margin-left: 1rem;
+    }
+    .loader{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .circle{
+        left: 96%;
+        top: 10%;
+    }
+    .pop{
+        border-radius: 10px 10px 0 10px;
+        top: -40%;
+        left: 60%;
+        min-width: 100px;
+    }
+    .pop span::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 95%;
+        margin-left: -18px;
+        border-width: 13px;
+        border-style: solid;
+        border-color: white white transparent transparent;
+      }
+      
+    .range p:last-of-type{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .pop p{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+  }
+
+
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-color:  hsl(229, 57%, 11%);
+        width: 100%;
+        max-height: 100vh;
+        position: relative;
+
+    }
+    .main{
+        background: url(./images/bg-desktop.png);
+        background-size:cover;
+        background-repeat:no-repeat;
+        margin-top: 25rem;
+        min-width: 1000px;
+        width: 100%;
+        height: 53.5vh;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .fylo{
+        width:25%;
+        min-width: 250px;
+        position: absolute;
+        left: 20%;
+        top: -50%;
+        padding: 1.2rem;
+    }
+    .logo{
+        margin: 1rem 0 3rem 1rem;
+    }
+    .folders{
+        display: flex;
+        align-items: start;
+        gap: .8rem;
+        margin-left: .5rem;
+        margin-bottom: 1.8rem;
+    }
+    .document{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .files{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1.1rem .8rem;
+        border-radius: 10px; 
+    }
+    .upload{
+        background-color: hsl(229, 57%, 11%);
+        padding: 1.3rem .8rem;
+        border-radius: 10px; 
+    }
+    .data{
+        width: 40%;
+        min-width: 300px;
+       position: absolute;
+       left: 47.5%;
+       top: -10%;
+    }
+    .data p{
+        text-align: start;
+        margin-left: 1rem;
+    }
+    .loader{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .circle{
+        left: 97.5%;
+        top: 10%;
+    }
+    .pop{
+        border-radius: 10px 10px 0 10px;
+        top: -40%;
+        left: 70%;
+        min-width: 100px;
+    }
+    .pop span::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 95%;
+        margin-left: -18px;
+        border-width: 13px;
+        border-style: solid;
+        border-color: white white transparent transparent;
+      }
+      
+    .range p:last-of-type{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .pop p{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+  }
