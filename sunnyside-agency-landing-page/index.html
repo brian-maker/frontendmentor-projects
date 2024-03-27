@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link href="./src/input.css" rel="stylesheet">
+  
+</head>
+<body>
+  <main>
+    <section>
+      <article>
+        <section class="navigation">
+          <nav>
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo">
+            </div>
+            
+            
+            <div class="menu" id="menu">
+              <div class="hamburger" id="hamburger">
+                <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
+              </div>
+             
+              <div class="menu-wrapper" id="menu-wrapper">
+                <div class="tooltip"></div>
+                <div class="menu-container" >
+                  <a href="#about">About</a>
+                  <a href="#testimonials">Services</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#footer" class="link-btn">Contact</a>
+                </div>
+       
+              </div>
+              
+            </div>
+    
+          </nav>
+    
+          <!--desktop navigation-->
+          <div class="desktop-navigation hidden" id="navigation">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo">
+            </div>
+    
+            <div class="menu-desktop" id="menu">
+              
+              <div class="menu-container-desktop">
+                <a href="#about">About</a>
+                <a href="#testimonials">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#footer">Contact</a>
+              </div>
+     
+            </div>
+    
+          </div>
+    
+        </section>
+        <section class="hero">
+            <div class="creatives">
+              <h1> We are creatives</h1>
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-down">
+            </div>         
+        </section>
+      </article> 
+      <section class="transform" id="about">
+        <div class="row-1">
+          <div class="egg"></div>
+        <div class="brand">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <button>Learn more</button>
+        </div>
+        </div>
+        
+        <!-- second row -->
+        <div class="row-2">
+          <div class="glass"></div>
+          <div class="brand">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+            </p>
+            <button class="glass-btn">Learn more</button>
+          </div>
+        </div>
+        
+        <!-- third row -->
+        <section class="row-3 ">
+          <div class="graphic">
+            <div class="graphic-text">
+              <h2> Graphic design</h2>
+              <p>
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </p>
+            </div>
+            
+          </div>
+          <div class="photography">
+            <div class="photography-text">
+              <h2> Photography</h2>
+              <p>
+                Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              </p>
+            </div>
+            
+          </div>
+        </section>
+        
+      </section>
+      <section class="testimonials" id="testimonials">
+        <h1>Client testimonials</h1>
+        <div class="clients">
+          <!-- emily -->
+          <div class="person">
+            <img src="./images/image-emily.jpg" alt="image-emily">
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            </p>
+            <div class="name">
+              <p>Emily R.</p>
+              <p>Marketing Director</p>
+            </div>
+
+          </div>
+          <!-- thomas -->
+          <div class="person">
+            <img src="./images/image-thomas.jpg" alt="image-thomas">
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="name">
+              <p>Thomas S.</p>
+              <p>  Chief Operating Officer</p>
+            </div>
+
+          </div>
+          <!-- jennie -->
+          <div class="person">
+            <img src="./images/image-jennie.jpg" alt="image-jennie">
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="name">
+              <p>Jennie F.</p>
+              <p>  Business Owner</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="cto" id="projects">
+          <div class="bottles image"></div>
+          <div class="orange image"></div>
+          <div class="cone image"></div>
+          <div class="cubes image"></div>
+      </section>
+
+      <footer id="footer">
+        <div class="logo">
+          <img src="./images/logo footer.svg" alt="logo">
+        </div>
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+        <div class="socials">
+          <img src="./images/icon-facebook.svg" alt="icon-facebook">
+          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <img src="./images/icon-twitter.svg" alt="icon-twitter">
+          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+        </div>
+      </footer>
+      
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
