@@ -1,0 +1,64 @@
+@media screen and (min-width: 720px){
+    .main{
+       min-width: 920px;
+     }
+     .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40vh;
+    }
+    .dashboard h1{
+        font-size:2rem;
+    }
+    .dashboard p{
+        border-bottom: none;
+    }
+    .dashboard{
+        margin-top: -7rem;
+    }
+    .dark-mode{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-wrap: normal;
+        gap: 1rem;
+        margin-top: -7rem;
+
+    }
+    .social-media,.overview-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .social-media,.overview,.heading{
+        padding: 0 5rem;
+    }
+    .social-media{
+        margin-top: -8rem;
+        margin-bottom: 1rem;
+    }
+    .overview h2{
+        font-size: 30px;
+    }
+    .box{
+        transition: ease-in-out 0.3s;
+    }
+    .box:hover{
+        background: hsl(223, 9%, 85%);
+        cursor: pointer;
+    } 
+    .dark-mode button:hover{
+       background-image:linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+       cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .social-media,.overview,.heading{
+        padding: 0 10rem;
+    }
+    .social-media,.overview-wrapper{
+        gap: 1.5rem;
+    }
+}
